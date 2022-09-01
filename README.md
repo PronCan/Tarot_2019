@@ -1,6 +1,5 @@
 # Tarot_2019
 
 ## 실행 영상
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=NHBcDMQtido"><img src="https://img.youtube.com/vi/NHBcDMQtido/0.jpg" alt="Tarot video"></a>
-</div>
+
+https://user-images.githubusercontent.com/17294545/187983868-94f1b782-dabf-4e21-a1cc-94c83cffb6f8.mp4
