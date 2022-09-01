@@ -1,4 +1,6 @@
 # Tarot_2019
 
 ## 영상
-<iframe width="640" height="360" src="https://www.youtube.com/embed/NHBcDMQtido" title="타로카드 영상" frameborder="0"></iframe>
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=NHBcDMQtido"><img src="https://img.youtube.com/vi/NHBcDMQtido/0.jpg" alt="Tarot video"></a>
+</div>
