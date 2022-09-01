@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/def_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/select_card_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanum_gothic"
+        android:gravity="center"
+        android:text="카드를 3장 선택하세요"
+        android:textColor="#fff"
+        android:textSize="21dp" />
+
+    <LinearLayout
+        android:id="@+id/select_card_layout_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_today_card1_res"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/card" />
+
+        <ImageView
+            android:id="@+id/img_today_card2_res"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/card" />
+
+
+        <ImageView
+            android:id="@+id/img_today_card3_res"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/card" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/today_card_btn"
+                android:layout_width="360dp"
+                android:layout_height="104dp"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="12dp"
+                app:srcCompat="@mipmap/cards" />
+
+            <ImageView
+                android:id="@+id/today_card_btn2"
+                android:layout_width="360dp"
+                android:layout_height="104dp"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="12dp"
+                app:srcCompat="@mipmap/cards" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/sub_btn_select_def"
+            android:id="@+id/event_card_layout"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/event_card"
+                android:layout_width="71dp"
+                android:layout_height="114dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/card" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textSize="18dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/today_card_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanum_gothic"
+            android:text="다음을 눌러 결과를 보세요."
+            android:textColor="#fff"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/today_card_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="세부설명"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_today_next"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/nanum_gothic_bold"
+        android:text="다음"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/select_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_today_card1"
+            android:layout_width="71dp"
+            android:layout_height="114dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@mipmap/card" />
+
+        <ImageView
+            android:id="@+id/img_today_card2"
+            android:layout_width="71dp"
+            android:layout_height="114dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@mipmap/card" />
+
+
+        <ImageView
+            android:id="@+id/img_today_card3"
+            android:layout_width="71dp"
+            android:layout_height="114dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@mipmap/card" />
+
+    </LinearLayout>
+</LinearLayout>

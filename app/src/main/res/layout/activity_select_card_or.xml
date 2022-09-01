@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/select_card_or_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:fontFamily="@font/nanum_gothic"
+        android:gravity="center"
+        android:text="양자택일(A or B) 고민을 입력해 주세요."
+        android:textColor="#fff"
+        android:textSize="21dp" />
+
+    <LinearLayout
+        android:id="@+id/select_card_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_yesno_question"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/image_border_black"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btn_doSelectCard"
+            android:layout_width="144dp"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:text="다음"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_card_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cardor4"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/card" />
+
+            <ImageView
+                android:id="@+id/cardor2"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/card" />
+
+            <ImageView
+                android:id="@+id/cardor1"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/card" />
+
+            <ImageView
+                android:id="@+id/cardor3"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/card" />
+
+            <ImageView
+                android:id="@+id/cardor5"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/card" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/or_card_btn"
+            android:layout_width="360dp"
+            android:layout_height="104dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="12dp"
+            app:srcCompat="@mipmap/cards" />
+
+        <TextView
+            android:id="@+id/or_card_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="설명"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

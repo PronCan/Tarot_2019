@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/btn_end_def" />
+    <stroke
+        android:width="3px"
+        android:color="#fff"
+        />
+    <padding
+        android:bottom="3px"
+        android:left="3px"
+        android:right="3px"
+        android:top="3px" />
+
+</shape>

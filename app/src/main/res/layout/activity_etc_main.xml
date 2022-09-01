@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="무슨 고민이 있으신가요?"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:fontFamily="@font/nanum_gothic"
+        android:paddingBottom="30dp"
+        android:textColor="#fff"
+        />
+    <!-- 애정운 -->
+    <include
+        android:id="@+id/etc_main_btn1"
+        layout="@layout/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!-- 직업운 -->
+    <include
+        android:id="@+id/etc_main_btn2"
+        layout="@layout/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!-- 건강운 -->
+    <include
+        android:id="@+id/etc_main_btn3"
+        layout="@layout/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!-- 취미운 -->
+    <include
+        android:id="@+id/etc_main_btn4"
+        layout="@layout/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!-- 기타 운세 -->
+    <include
+        android:id="@+id/etc_main_btn5"
+        layout="@layout/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/result_card_img"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/card" />
+
+        <TextView
+            android:id="@+id/result_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic"
+            android:text="카드이름"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result_card_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanum_gothic"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:text="설명"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

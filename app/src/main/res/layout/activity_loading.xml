@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_zoom"
+    android:id="@+id/loading_activity"
+    >
+
+    <TextView
+        android:id="@+id/loadingtxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:fontFamily="@font/nanum_gothic"
+        android:layout_marginTop="100dp"
+        />
+</LinearLayout>

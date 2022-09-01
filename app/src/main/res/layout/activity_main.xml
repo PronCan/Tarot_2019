@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bg_intro"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_gothic"
+                android:letterSpacing="0.5"
+                android:text="달이 들려주는 이야기"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/nanum_myeongjo"
+                android:letterSpacing="0.2"
+                android:text="타로카드"
+                android:textColor="#d9c1ee"
+                android:textSize="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 오늘의 운세 -->
+            <include
+                android:id="@+id/btn_today"
+                layout="@layout/button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp" />
+
+            <!-- 고민 타로 -->
+            <include
+                android:id="@+id/btn_etc"
+                layout="@layout/button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp" />
+
+            <!-- 양자택일 타로 -->
+            <include
+                android:id="@+id/btn_select"
+                layout="@layout/button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
